@@ -43,3 +43,8 @@ Componentsより「Resistor」を選択し、配置します。
 抵抗の右側をHの左から7番目になるように配置します。
 その後、ComponentsよりLEDを配置します。
 ![](circuits08.jpg)
+
+LEDの右側をIの左から3番目の位置になるように配置します。
+その後、ArduinoのGNDと、Jの左から2番目を線で繋ぎます。
+繋ぎ終わりましたら、右上の「StartSimulation」を押して実行し、LEDが点灯することを確認しましょう。
+![](circuits09.jpg)
