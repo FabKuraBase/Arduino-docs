@@ -1,5 +1,5 @@
 # Summary
 
 * [はじめに](README.md)
-* [First Chapter](chapter1.md)
+* [1.Arduinoとは](chapter1.md)
 
