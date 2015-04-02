@@ -13,5 +13,5 @@
 * [感圧センサー](chapter10.md)
 * [3軸加速度センサー](chapter11.md)
 * [距離センサー](chapter12.md)
-* 可変抵抗
+* [可変抵抗](chapter13.md)
 
