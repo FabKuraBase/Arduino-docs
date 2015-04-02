@@ -18,20 +18,20 @@
 
 ```
 int melo = 200;   // 音の長さを指定
-int pin = 13;        // ブザーを接続したピン番号
+int pin = 13;     // ブザーを接続したピン番号
   
 void setup() {
 }
 
 void loop() {
      tone(pin,262,melo) ;  // ド
-     delay(melo) ;              // 音がなっている間待機
+     delay(melo) ;         // 音がなっている間待機
      tone(pin,294,melo) ;  // レ
      delay(melo) ;
      tone(pin,330,melo) ;  // ミ
      delay(melo) ;
 
-     delay(1000) ;              // 1秒待機
+     delay(1000) ;         // 1秒待機
 }
 ```
 
