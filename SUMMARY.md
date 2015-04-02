@@ -8,6 +8,4 @@
 * [LEDを点灯させてみよう](chapter5.md)
 * [スイッチを使ってみよう](chapter6.md)
 * [圧電ブザーを鳴らせてみよう](chapter7.md)
-* [温度センサー](chapter8.md)
-   * 照度センサー
 
