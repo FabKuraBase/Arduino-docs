@@ -33,7 +33,7 @@ PCとArduinoを接続
 
 MACの場合
 　シリアルポートより「/dev/tty.usbmodemfa～」を選択します。
-
+![](ard2.png)
 
 Windowsの場合
 デバイスマネージャにて「Arduino UNO」が設定されているポートを指定します。
