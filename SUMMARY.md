@@ -6,5 +6,5 @@
 * [ArduinoとPCを接続してみよう](chapter3.md)
 * [ブレッドボード](chapter4.md)
 * [LEDを点灯させてみよう](chapter5.md)
-* [6.スイッチを使ってみよう](chapter6.md)
+* [スイッチを使ってみよう](chapter6.md)
 
