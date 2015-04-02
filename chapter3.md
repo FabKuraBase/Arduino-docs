@@ -21,7 +21,7 @@ Windowsマシンの場合は「Windows　Installer」、MACの場合は「Mac　
 PCとArduinoを接続
 
 インストールが完了したら、ArduinoとPCをUSBケーブルで繋ぎます。 
-
+![](connect.jpg)
 
 先ほどインストールしたArduino IDEを起動し、マイコンボード、シリアルポートの設定を行います。
 
