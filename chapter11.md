@@ -4,15 +4,17 @@
 
 ## センサー
 
+![](acceleration1.jpg)
 
 
 加速度センサーはKXM52、またはKXR94を使います。
-![](acceleration1.jpg)
 
 KXM52
+<br>
 http://akizukidenshi.com/download/aki-3axis-module.pdf
 
 KXR94
+<br>
 http://akizukidenshi.com/download/ds/akizuki/AKI-KXR94-Module.pdf
 
 ## 回路
