@@ -11,5 +11,5 @@
 * [温度センサー](chapter8.md)
 * [照度センサー](chapter9.md)
 * [感圧センサー](chapter10.md)
-* [加速度センサー](chapter11.md)
+* [3軸加速度センサー](chapter11.md)
 
