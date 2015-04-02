@@ -5,6 +5,7 @@
 ![](pressure1.jpg)
 
 感圧センサーはFSR402を使います。
+<br>
 http://akizukidenshi.com/catalog/g/gP-04002/
 
 ## 回路
