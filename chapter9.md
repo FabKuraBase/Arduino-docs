@@ -15,7 +15,7 @@ http://akizukidenshi.com/catalog/g/gI-00110/
 
 ## 回路
 
-回路を作成してみましょう。
+
 ![](light2.jpg)
 
 ## スケッチ
