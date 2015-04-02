@@ -7,6 +7,7 @@
 
 
 加速度センサーはKXM52、またはKXR94を使います。
+![](acceleration1.jpg)
 
 KXM52
 http://akizukidenshi.com/download/aki-3axis-module.pdf
@@ -18,7 +19,7 @@ http://akizukidenshi.com/download/ds/akizuki/AKI-KXR94-Module.pdf
 
 センサーには向きがありますので注意しましょう。
 左下に「１」と書かれた部分がくるように設置します。
-
+![](acceleration2.jpg)
 
 ## スケッチ
 
