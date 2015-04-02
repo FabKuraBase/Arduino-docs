@@ -14,5 +14,5 @@
 * [3軸加速度センサー](chapter11.md)
 * [距離センサー](chapter12.md)
 * [可変抵抗](chapter13.md)
-* LCD
+* [LCD](chapter14.md)
 
