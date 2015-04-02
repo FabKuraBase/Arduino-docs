@@ -14,7 +14,7 @@ http://arduino.cc/en/Main/Software
 
 
 Windowsマシンの場合は「Windows　Installer」、MACの場合は「Mac　OS　X」を選択します。 
-
+![](dl2.jpg)
 
 選択するとダウンロードされますので、完了したらインストールを行います。
 
