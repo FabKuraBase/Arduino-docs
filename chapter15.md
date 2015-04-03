@@ -2,9 +2,11 @@
 
 ## LEDマトリクス
 
+![](led_m1.jpg)
+<br>
 
 今回使用するLEDマトリクスは、縦8、横8の計64個のLEDが組み込まれた装置です。
-![](led_m1.png)
+
 http://akizukidenshi.com/catalog/g/gI-05163/
 
 このLEDマトリクスはダイナミック点灯という方式でLEDを点灯させています。
@@ -13,28 +15,27 @@ http://akizukidenshi.com/catalog/g/gI-05163/
 各LEDは行(横)と列(縦)のHIGH(1)とLOW(0)の組み合わせにより点灯させます。
 行がHIGH、列がLOWの状態、または行がLOW、列がHIGHの状態で点灯します。
 <br>
-![](led_m2.png)
+![](led_m2.jpg)
 
-最初に縦全てをLOW、横全てをHIGHで初期化しておきます。
+最初に行(縦)全てをLOW、列(横)全てをHIGHで初期化しておきます。
 
 まず<font color="FF0000">**１行目をHIGH**</font>で出力します。
 この状態ではLEDは点灯しません。
-![](led_m3.png)
+![](led_m3.jpg)
 
 <font color="FF0000">**１行目をHIGH**</font>、<font color="0000FF">**４列目をLOW**</font>で出力を行うと、行１、列４で交差する場所のLEDが点灯します。
 <br>
 **※点灯させたあとは次のLEDを付ける前に消灯(今回は4列目をHIGHに変更)させます。**
 <br>
-![](led_m4.png)
+![](led_m4.jpg)
 
 次に<font color="0000FF">**５列目をLOW**</font>で出力を行うと、行１、列５で交差する場所のLEDが点灯します。
 <br>
-![](led_m5.png)
+![](led_m5.jpg)
 
 上の様に短い時間に複数のLEDを連続で表示させることにより、下の様な文字が見えるようになります。
 <br>
-![](led_m6.png)
-
+![](led_m6.jpg)
 
 配置する向きですが、◯がある方が手前(下)になります。
 <br>
