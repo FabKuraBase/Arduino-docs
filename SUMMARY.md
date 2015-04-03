@@ -15,5 +15,5 @@
 * [距離センサー](chapter12.md)
 * [可変抵抗](chapter13.md)
 * [LCD](chapter14.md)
-* LEDマトリクス
+* [LEDマトリクス](chapter15.md)
 
