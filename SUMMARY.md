@@ -16,5 +16,5 @@
 * [可変抵抗](chapter13.md)
 * [LCD](chapter14.md)
 * [LEDマトリクス](chapter15.md)
-* サーボモーター
+* [サーボモーター](chapter16.md)
 
