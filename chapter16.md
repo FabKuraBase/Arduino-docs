@@ -1,6 +1,8 @@
 # 16.サーボモーター
 
-サーボモーター
+
+## サーボモーター
+
 サーボモーターとは、位置や速度など制御するモーターで、ロボットの関節等に使用されます。
 
 
@@ -28,7 +30,7 @@ Servo myservo;
 
 void setup() 
 { 
-    s_servo.attach(servo_pin);
+    myservo.attach(servo_pin);
 } 
 
 void loop() 
