@@ -17,5 +17,5 @@
 * [LCD](chapter14.md)
 * [LEDマトリクス](chapter15.md)
 * [サーボモーター](chapter16.md)
-* [モータードライバ（DCモーター）](chapter16.md)
+* [モータードライバ（DCモーター）](chapter17.md)
 
