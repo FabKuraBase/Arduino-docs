@@ -9,6 +9,7 @@ http://123d.circuits.io/
 まずサインインしてみましょう。
 <br>
 既に123Dでアカウントをお持ちの方は「Signup」、お持ちでない方は「Signin」をクリックしてみましょう。
+<br>
 ![](circuits0.jpg)
 
 
@@ -16,16 +17,18 @@ SignUpをクリックした場合の画面です。
 <br>
 facebookのアカウントがあれば登録は必要ありません
 無い場合でもEmailとパスワードを設定すればすぐ使うことができます。
-![](circuits01.jpg)
-
+<br>
+![](circuits01-2.jpg)
 
 サインインするとブレッドボードというもののみ表示されています。
 <br>
 まずはArduinoを追加するため、画面右上の「Components」を選択します。
+<br>
 ![](circuits02.jpg)
 
 
 画面下に一覧が出てきますので、少し下にスクロールして「Arduino uno」を選択します。
+<br>
 ![](circuits03.jpg)
 
 
