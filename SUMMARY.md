@@ -18,4 +18,4 @@
 * [LEDマトリクス](chapter15.md)
 * [サーボモーター](chapter16.md)
 * [モータードライバ（DCモーター）](chapter17.md)
-
+* [Bluetoothによるシリアル通信](bluetooth.md)
