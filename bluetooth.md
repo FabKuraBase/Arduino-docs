@@ -6,9 +6,12 @@ Bluetoothモジュール
 <br>
 http://akizukidenshi.com/catalog/g/gM-07612/
 
-1.ArduinoからPCへの文字送信
 
-スケッチ
+## 1.ArduinoからPCへの文字送信
+
+まずはArduinoからPCへ文字を送信してみます。
+
+###スケッチ
 
 ```c
 #include <SoftwareSerial.h>
@@ -91,5 +94,8 @@ sudo screen /dev/tty.XXXXX 115200
 
 
 
-2.PCからArduinoへの文字送信
+
+## 2.PCからArduinoへの文字送信
+
+
 
