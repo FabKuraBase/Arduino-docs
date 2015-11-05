@@ -6,7 +6,7 @@ Bluetoothモジュール
 <br>
 http://akizukidenshi.com/catalog/g/gM-07612/
 
-1.Arduino->PCの文字送信
+1.ArduinoからPCへの文字送信
 
 スケッチ
 
@@ -54,7 +54,12 @@ void loop()
 ４．デバイスの追加にて対象のBluetoothと接続します。
 <br>※接続するBluetoothは、Bluetoothのチップに貼られているラベルの「MAC ID」の下四桁が設定されているものになります。
 
-５．コントロールパネルよりデバイスマネージャーにて
+５．コントロールパネルよりデバイスマネージャーを選択し、ポートからBluetoothの接続名を確認します。（接続名はCOM◯◯）
+
+６．ターミナルソフトを起動し、シリアルから上記の接続名を選択します。（2つある場合は番号の小さい方を選択してください）
+※ここで接続が成功すればBluetoothモジュールのLEDが緑で点灯します。
+
+７．転送レートをプログラムに合わせて変更する
 
 ###PCからBluetoothへの接続(Mac)
 １．ArduinoにBluetoothを接続した状態でPCと接続します。
@@ -86,5 +91,5 @@ sudo screen /dev/tty.XXXXX 115200
 
 
 
-2.PC->Arduinoの文字送信
+2.PCからArduinoへの文字送信
 
