@@ -25,10 +25,8 @@ SoftwareSerial mySerial(bluetoothRx, bluetoothTx); // RX, TX
 
 void setup()  
 {
-
   // Bluetooth用のシリアルオープン
   mySerial.begin(115200);
-
 }
 
 void loop()
