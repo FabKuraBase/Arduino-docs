@@ -96,6 +96,129 @@ sudo screen /dev/tty.XXXXX 115200
 
 
 ## 2.PCからArduinoへの文字送信
+次にPCで入力した文字をArduinoに送信するプログラムを書いてみましょう。
+
+###スケッチ
+```c
+#include <SoftwareSerial.h>
+
+int bluetoothRx = 10;  // RX-I of bluetooth
+int bluetoothTx = 11;  // TX-O of bluetooth
+
+SoftwareSerial mySerial(bluetoothRx, bluetoothTx); // RX, TX
+
+void setup()  
+{
+
+  // Arduino側のシリアルオープン
+  Serial.begin(115200);
+
+  // Bluetooth用のシリアルオープン
+  mySerial.begin(115200);
+
+  Serial.println("send start!");
+
+}
+
+void loop() // run over and over
+{
+  // Bluetoothから受け取ったデータがある場合
+  if (mySerial.available()){
+    // データ取得
+    char c = mySerial.read();
+    // 取得データをログに表示
+    Serial.println(c);
+  }
+}
+```
+
+書き込みが終わったら、ArduinoIDEでシリアルモニタを開き、ターミナル（またはターミナルソフト）を表示させた状態で、キーボードから文字を入力して確認します。
 
 
+## 3.PCとArduino間のデータ送受信
+次にお互いが受け取った文字を表示するプログラムを書いてみましょう。
 
+###スケッチ
+```c
+#include <SoftwareSerial.h>
+
+int bluetoothRx = 10;  // RX-I of bluetooth
+int bluetoothTx = 11;  // TX-O of bluetooth
+
+SoftwareSerial mySerial(bluetoothRx, bluetoothTx); // RX, TX
+
+void setup()  
+{
+  // Arduino側のシリアルオープン
+  Serial.begin(115200);
+
+  // Bluetooth用のシリアルオープン
+  mySerial.begin(115200);
+
+  Serial.println("start!");
+}
+
+void loop()
+{
+  // Bluetoothから受け取ったデータがある場合
+  if (mySerial.available()){
+    char c = mySerial.read();
+    Serial.write(c);    
+  }
+  
+  // シリアルモニタから入力したデータがある場合
+  if (Serial.available()){
+    mySerial.write(Serial.read());
+  }
+}
+```
+書き込みが終わったら、ArduinoIDEのシリアルモニタの上部にある入力用の項目から入力して送信ボタン(またはEnterキー)、ターミナル（またはターミナルソフト）を表示させた状態で、キーボードから文字入力をそれぞれ試してみましょう。
+
+
+## 4.PCからLED操作
+最後にPCからArduinoに接続されたLEDを制御してみたいと思います。
+
+###スケッチ
+```c
+#include <SoftwareSerial.h>
+
+#define ledPin A0
+
+int bluetoothRx = 10;  // RX-I of bluetooth
+int bluetoothTx = 11;  // TX-O of bluetooth
+
+SoftwareSerial mySerial(bluetoothRx, bluetoothTx); // RX, TX
+
+void setup()  
+{
+
+  // LEDpin
+  pinMode(ledPin,OUTPUT);
+  
+  // Arduino側のシリアルオープン
+  Serial.begin(115200);
+
+  // Bluetooth用のシリアルオープン
+  mySerial.begin(115200);
+
+  Serial.println("start!");
+}
+
+void loop()
+{
+  // Bluetoothから受け取ったデータがある場合
+  if (mySerial.available()){
+    char c = mySerial.read();
+    if (c == '1'){
+      digitalWrite(ledPin,HIGH);
+    }else if(c == '0'){
+      
+    }
+    Serial.write(c);
+  }
+  
+  // シリアルモニタから入力したデータがある場合
+  if (Serial.available()){
+    mySerial.write(Serial.read());
+  }
+}```
