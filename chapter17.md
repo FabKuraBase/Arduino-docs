@@ -133,3 +133,31 @@ void loop(){
   }    
 }
 ```
+
+###可変抵抗なし回路
+
+![](motor1.png)
+
+###可変抵抗、電池なし回路
+![](motor2.png)
+
+
+### 可変抵抗なし回路のスケッチ(電池なしもOK)
+
+```c
+void setup(){
+  pinMode(1,OUTPUT); //信号用ピン 6番ピン
+  pinMode(2,OUTPUT); //信号用ピン 5番ピン
+}
+
+void loop(){
+  //モーターの強さ指定
+  int val = 255; //0~255の値にする
+  
+  // 信号1をHIGH, 信号2をLOW
+  digitalWrite(1,HIGH);
+  digitalWrite(2,LOW);
+
+  //valが大きいほど出力値も大きくなる
+  analogWrite( 3 , val ); //出力値:1~255
+}```
