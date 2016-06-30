@@ -20,8 +20,7 @@ http://akizukidenshi.com/download/ds/akizuki/AKI-KXR94-Module.pdf
 センサーには向きがありますので注意しましょう。
 左下に「１」と書かれた部分がくるように設置します。
 <br>
-![](acceleration2.jpg)
-
+![](acceleration2.png)
 ## スケッチ
 
 ```
