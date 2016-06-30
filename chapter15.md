@@ -2,9 +2,6 @@
 
 ## LEDマトリクス
 
-![](led_m1.jpg)
-<br>
-
 今回使用するLEDマトリクスは、縦8、横8の計64個のLEDが組み込まれた装置です。
 
 http://akizukidenshi.com/catalog/g/gI-05163/
