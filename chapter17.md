@@ -42,7 +42,6 @@ http://akizukidenshi.com/catalog/g/gI-02001/
 
 ## 回路
 
-回路を作成してみましょう。
 今回は外部電源(電池)を使用するため、プラスマイナスや、ショートに注意しましょう。
  
 ![](motor_driver3.jpg)
@@ -50,11 +49,11 @@ http://akizukidenshi.com/catalog/g/gI-02001/
 
 ## スケッチ
 
-スケッチしてみましょう。
-最初に前進の動きをしてみます。
+最初に前進の動作を行います。
+
 電池を入れる前にスケッチ書き込みを行い、一旦PCから外してから電池をセットし、もう一度接続して確認しましょう。
 
-```
+```c
 void setup(){
   pinMode(1,OUTPUT); //信号用ピン 6番ピン
   pinMode(2,OUTPUT); //信号用ピン 5番ピン
@@ -76,7 +75,7 @@ void loop(){
 
 確認できましたら、今度は逆転をやってみましょう。
 
-```
+```c
 void setup(){
   pinMode(1,OUTPUT); //信号用ピン 6番ピン
   pinMode(2,OUTPUT); //信号用ピン 5番ピン
@@ -99,7 +98,7 @@ void loop(){
 
 ここまでできましたら、可変抵抗の値によって前進、後退、停止するスケッチを書いてみましょう。
 
-```
+```c
  void setup(){
   pinMode(1,OUTPUT); //信号用ピン 6番ピン
   pinMode(2,OUTPUT); //信号用ピン 5番ピン
