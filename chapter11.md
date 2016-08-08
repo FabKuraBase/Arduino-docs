@@ -23,7 +23,7 @@ http://akizukidenshi.com/download/ds/akizuki/AKI-KXR94-Module.pdf
 ![](acceleration2.png)
 ## スケッチ
 
-```
+```c
 int outX = 2;  // X軸のピン番号
 int outY = 1;  // Y軸のピン番号
 int outZ = 0;  // Z軸のピン番号
