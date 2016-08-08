@@ -7,6 +7,7 @@
 ※このテキストでは1.0.5を使用していますが、その時点の最新バージョンをご使用下さい。
 <br>
 以下よりArduino IDE(最新版1.0.5)をダウンロードし、インストールします。
+
 http://arduino.cc/en/Main/Software
 
 「Arduino IDE」より「Arduino1.0.5」を選択します。
