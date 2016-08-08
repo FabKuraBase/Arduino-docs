@@ -52,7 +52,7 @@ LCD側のそれぞれのピンと、Arduino側の接続先について説明を�
 
 下のスケッチはサンプルのコメントを除外し、説明文を追加しています。
 
-```
+```c
 // LCDを使う場合に必要なファイルを読み込む
 #include <LiquidCrystal.h>
 
@@ -76,13 +76,13 @@ void loop() {
 ```
 
 このサンプルのLiquidCrystal lcdの部分を変更します。
-```
+```c
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 ```
 
 
 変更後
-```
+```c
 LiquidCrystal lcd(1, 2, 3, 4, 5, 6, 7);
 
 ```
