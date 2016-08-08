@@ -14,7 +14,7 @@ http://akizukidenshi.com/catalog/g/gP-04002/
 
 ## スケッチ
 
-```
+```c
 int pin    = 0;  //センサーのピン番号
 int get_a0 = 0;  //センサーデータ取得用
 
