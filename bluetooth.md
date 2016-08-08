@@ -5,8 +5,7 @@
 スマートフォンやキーボード、マウスなどのパソコンの周辺機器等の音声や文字等の比較的簡単な通信に使用されます。
 
 
-Bluetoothモジュール
-<br>
+###Bluetoothモジュール
 http://akizukidenshi.com/catalog/g/gM-07612/
 
 
@@ -19,8 +18,8 @@ http://akizukidenshi.com/catalog/g/gM-07612/
 ```c
 #include <SoftwareSerial.h>
 
-int bluetoothRx = 10;  // RX-I of bluetooth
-int bluetoothTx = 11;  // TX-O of bluetooth
+int bluetoothRx = 12;  // RX-I of bluetooth
+int bluetoothTx = 13;  // TX-O of bluetooth
 
 int count = 0; //送信用カウンタ
 
@@ -47,42 +46,41 @@ void loop()
 ※ここではwindows7での接続方法を記入します。<br>
 その他の場合はペアリング方法が少し異なります。
 
-１．シリアル通信が行えるターミナルソフトをダウンロードします。
+1. シリアル通信が行えるターミナルソフトをダウンロードします。
 
-２．ArduinoにBluetoothを接続した状態でPCと接続します。
-<br>
+2. ArduinoにBluetoothを接続した状態でPCと接続します。
 
-３．コントロールパネルよりデバイスとプリンタを選択します。
+3. コントロールパネルよりデバイスとプリンタを選択します。
 
-４．画面上のメニューにあるデバイスの追加を選択し、表示されたデバイスから対象のBluetoothを選択し接続します。
-<br>※接続するBluetoothは、Bluetoothのチップに貼られているラベルの「MAC ID」の下四桁が設定されているものになります。
+4. 画面上のメニューにあるデバイスの追加を選択し、表示されたデバイスから対象のBluetoothを選択し接続します。<br>
+※接続するBluetoothは、Bluetoothのチップに貼られているラベルの「MAC ID」の下四桁が設定されているものになります。
 
-５．コントロールパネルよりデバイスマネージャーを選択し、ポートからBluetoothの接続名を確認します。（接続名はCOM◯◯）
+5. コントロールパネルよりデバイスマネージャーを選択し、ポートからBluetoothの接続名を確認します。（接続名はCOM◯◯）
 
-６．ターミナルソフトを起動し、シリアルから上記の接続名を選択します。（2つある場合は番号の小さい方を選択してください）
+6. ターミナルソフトを起動し、シリアルから上記の接続名を選択します。（2つある場合は番号の小さい方を選択してください）<br>
 ※ここで接続が成功すればBluetoothモジュールのLEDが青で点灯します。
 
-７．転送レートをプログラムに合わせて変更する
+7. 転送レートをプログラムに合わせて変更する
 
 ###PCからBluetoothへの接続(Mac)
-１．ArduinoにBluetoothを接続した状態でPCと接続します。
+1. ArduinoにBluetoothを接続した状態でPCと接続します。
 <br>
 Bluetoothモジュールはこの時点では未接続のため、赤点滅している状態です。
 
-２．Macのメニューよりシステム環境設定を開き、「Bluetooth」を選択
+2. Macのメニューよりシステム環境設定を開き、「Bluetooth」を選択
 
-３．対象のBluetoothモジュールを選択し、ペアリングを行います。
+3. 対象のBluetoothモジュールを選択し、ペアリングを行います。
 <br>
 接続できない場合は数回ためしてみることで繋がる場合があります。
 
-４．ターミナルを起動し、下記のコマンドを実行して接続先の確認します。
+4. ターミナルを起動し、下記のコマンドを実行して接続先の確認します。
 <br>
 ※「/dev/tty.RNBT」で始まるものがBrickになります。
 ```
 sudo ls /dev/tty.*
 ```
 
-５．ターミナルにて下記のコマンドを実行し、Screenを起動します。 
+5. ターミナルにて下記のコマンドを実行し、Screenを起動します。 
 <br>
 ※「XXXXX」の箇所は上記で確認したものを設定します。
 <br>また、115200で設定している箇所は転送レートになるのでプログラムに合わせて変更します。
@@ -143,8 +141,8 @@ void loop() // run over and over
 ```c
 #include <SoftwareSerial.h>
 
-int bluetoothRx = 10;  // RX-I of bluetooth
-int bluetoothTx = 11;  // TX-O of bluetooth
+int bluetoothRx = 12;  // RX-I of bluetooth
+int bluetoothTx = 13;  // TX-O of bluetooth
 
 SoftwareSerial mySerial(bluetoothRx, bluetoothTx); // RX, TX
 
